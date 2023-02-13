@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Replica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    .hover-trigger .hover-target {
+        display: none;
+    }
+    
+    .hover-trigger:hover .hover-target {
+        display: block;
+    }
+</style>
+
+<body class="bg-neutral-900">
+
+    
+    
+    <!--This is the top navigation-->
+
+    <nav class="bg-black">
+        <div class="flex justify-between">
+            <div class="flex mr-40">
+                <button class="m-4 py-1 px-2 rounded-full hover:bg-neutral-700">
+                    <img src="assets/hamburger.svg" class="w-6">
+                </button>
+                <button class="mr-20">
+                    <img src="assets/logo-long.svg" class="w-18">
+                </button>
+            </div>
+            <div class="grow">
+                <div class="flex">
+                    <input type="text" id="search" class="mt-5 mb-4 py-1 px-5 w-full text-base text-white bg-black rounded-l-full border-solid border-2 border-neutral-800 focus:ring-neutral-700 focus:border-neutral-700 active:border-neutral-700" placeholder="Search">
+                    <button type="search-icon" class="mt-5 mb-4 py-1 px-6 bg-neutral-800 rounded-r-full hover:bg-neutral-700">
+                        <img src="assets/search-1.svg" class="w-10 h-6">
+                    </button>
+                    <button class="m-4 py-1 px-1 bg-neutral-900 rounded-full hover:bg-neutral-700">
+                        <img src="assets/mic-1.svg" class="w-10 h-6">
+                    </button>
+                </div>
+            </div>
+            <div class="flex ml-40">
+                <button class="mt-4 mb-4 mr-2 py-1 px-1 rounded-full hover:bg-neutral-700">
+                    <img src="assets/camera-1.svg" class="w-9 h-6">
+                </button>
+                <button class="mt-4 mb-4 mr-2 py-1 px-1 rounded-full hover:bg-neutral-700">
+                    <img src="assets/bell-1.svg" class="w-9 h-6">
+                </button>
+                <button class="mt-4 mb-4 mr-4 py-1 px-1 rounded-full hover:bg-neutral-700">
+                    <img src="assets/profile.jpeg" class="w-9 object-cover rounded-full">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-blue-600 flex p-2 font-medium text-white justify-center">
+        <p>Disclaimer: This website is made purely for academic purposes only. No commercial usage is intended. ArtCenter Interaction Design IxD2 Spring 2023. Isaac Tseng.</p>
+    </div>
+    <!--This is the main body-->
+
+    <div class="flex grid grid-cols-3 gap-3">
+
+        <!--Beginning of Left Column-->
+
+        <section class="col-start-1 col-end-3 flex flex-col pt-7 pl-7 pr-4 mb-20">
+            <div class="mb-3 hover-trigger relative">
+                <img src="assets/Video.png" class="rounded-lg">
+                <div class="hover-target flex flex-col">
+                    <div class="absolute bottom-0 w-full bg-black bg-opacity-50 flex flex-col  rounded-lg">
+                        <div class="w-90 bg-neutral-200 h-1">
+                            <div class="bg-blue-600 h-1 dark:bg-red-600" style="width: 45%"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <button class="pl-3">
+                                    <img src="assets/play-2.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/skip-forward.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/sound.svg" class="w-18">
+                                </button>
+                                <p class="text-white text-xs font-light py-4 px-2">2:07 / 20:17</p>
+                            </div>
+                            <div class="flex">
+                                <button class="px-1">
+                                    <img src="assets/closed-caption.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/settings.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/screen-miniplayer.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/screen-theater.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/screen-tv.svg" class="w-18">
+                                </button>
+                                <button class="px-1">
+                                    <img src="assets/screen-full.svg" class="w-18">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="text-white font-medium text-xl">Lexus LFA Review // A Living Legend</p>
+            </div>
+            <div class="flex justify-between">
+                <div class="flex">
+                    <button class="mt-2 mb-2 mr-2 rounded-full">
+                        <img src="assets/channel-profile.jpeg" class="w-10 object-cover rounded-full">
+                    </button>
+                    <div class="flex flex-col mr-6">
+                        <div class="flex justify-center">
+                            <p class="font-medium text-base pt-1 px-2 text-white">Throttle House</p>
+                            <img src="assets/verified.svg" class="w-4 pt-1">
+                        </div>
+                        <p class="font-medium text-xs pb-1 px-2 text-neutral-400">2.43M subscribers</p>
+                    </div>
+                    <button class="m-2 px-4 rounded-full bg-white font-medium text-sm text-black">Subscribe</button>
+                </div>
+                <div class="flex">
+                    <button class="mt-2 mb-2 ml-2 px-4 rounded-full bg-neutral-700 font-medium text-sm text-white flex pt-1">
+                        <img src="assets/like-2.svg" class="pr-1"> <p class="pt-1">93K |</p><img src="assets/dislike.svg" class="pl-1">
+                    </button>
+                    <button class="mt-2 mb-2 ml-2 px-4 rounded-full bg-neutral-700 font-medium text-sm text-white flex pt-1">
+                        <img src="assets/share-2.svg" class="pr-1"> <p class="pt-1">Share</p>
+                    </button>
+                    <button class="mt-2 mb-2 ml-2 px-4 rounded-full bg-neutral-700 font-medium text-sm text-white flex pt-1">
+                        <img src="assets/download.svg" class="pr-1"> <p class="pt-1">Download</p>
+                    </button>
+                    <button class="mt-2 mb-2 ml-2 px-2 rounded-full bg-neutral-700 font-medium text-sm text-white">
+                        <img src="assets/3-dot-2.svg">
+                    </button>
+                </div>
+            </div>
+
+            <!--Video Description block-->
+
+            <div class="relative my-2 py-2 px-1 rounded-lg bg-neutral-800">
+                <div>
+                    <p class="font-medium text-sm text-white pl-2">2.1M views</p>
+                    <p class="font-medium text-sm text-white pl-2">1 year ago</p>
+                    <p class="font-medium text-sm text-gray-400 pl-2">#LFA #Lexus #ExhaustSound</p>
+                </div>
+                <div class="p-2">
+                    <p class="font-base text-sm text-white">The Lexus LFA (Now ~$1,000,000 CAD, ~$800,000 USD) is just about everyone’s favourite supercar - and it’s no surprise as to why. The handbuilt naturally aspirated V10 with its meticulously engineered exhaust note. The mind-bendingly fast sequential gearbox. The carbon fibre infused chassis. There are so many reasons why the LFA holds a special place in the hearts of enthusiasts all over the world. But will it live up to the hype and be the exception to the saying ‘don’t meet your heroes’? Watch as Thomas and James attempt to pick their jaws up off the floor and review this automotive legend. SUBSCRIBE!</p>
+                </div>
+                <div class="font-light text-sm text-white underline absolute right-4 bottom-2">Show more</div>
+            </div>
+
+            <!--Comments Section-->
+
+            <div class="my-4 flex">
+                <p class="font-base text-base text-white pr-6">7,597 Comments</p>
+                <button class="flex font-medium text-sm text-white">
+                    <img src="assets/playlist-2.svg" class="px-2"> Sort by
+                </button>
+            </div>
+            <div class="flex">
+                <button class="mt-2 mb-2 mr-4 rounded-full">
+                    <img src="assets/profile.jpeg" class="w-10 object-cover rounded-full">
+                </button>
+                <input type="text" id="search" class="mb-6 w-full font-base text-sm text-white bg-neutral-900 border-b border-neutral-700" placeholder="Add a comment...">
+            </div>
+
+            <div class="my-2">
+                <div class="flex items-start">
+                    <button class="mt-1 mb-2 mr-4 rounded-full">
+                        <img src="assets/channel-profile.jpeg" class="min-w-10 object-cover rounded-full">
+                    </button>
+                    <div class="flex flex-col">
+                        <div class="flex">
+                            <img src="assets/pin.svg" class="w-4 pl-1">
+                            <p class="text-neutral-400 text-xs font-light">Pinned by Throttle House</p>
+                        </div>
+                        <div class="flex mt-2">
+                            <div class="flex px-2 rounded-full bg-neutral-700">
+                                <p class="text-white text-sm font-medium">Throttle House</p>
+                                <img src="assets/verified.svg" class="w-4 pl-1">
+                            </div>
+                            <p class="text-neutral-400 text-sm font-base px-2">1 year ago</p>
+                        </div>
+                        <p class="text-white text-sm font-base pt-1">Thank you all for your kind words. We’re absolutely blown away by your comments. This was a truly special experience and our editor extraordinaire Karston did an incredible job with the final product. And yes, don’t worry. Harrison did indeed get to drive his dream car. 😉. Thanks again everyone, and stay tuned. We’ve got more wild stuff coming.</p>
+                    </div>
+                </div>
+                <div class="flex mx-10">
+                    <button class="ml-2 px-2">
+                        <img src="assets/like-2.svg" class="pr-1">
+                    </button>
+                    <p class="text-neutral-400 text-xs font-medium pt-1">4.1K</p>
+                    <button class="ml-2 pl-4">
+                        <img src="assets/dislike.svg" class="pr-1">
+                    </button>
+                    <p class="text-white text-xs font-medium pt-1 pl-4">Reply</p>
+                </div>
+                <div class="flex mx-10 my-3">
+                    <button class="ml-2 px-2">
+                        <img src="assets/down-blue.svg" class="pr-1">
+                    </button>
+                    <p class="text-blue-400 text-xs font-bold pt-1 pl-1">86 replies</p>
+                </div>
+            </div>
+
+            <div class="my-2">
+                <div class="flex items-start">
+                    <button class="mt-3 mb-2 mr-4 rounded-full">
+                        <img src="assets/comment-1.jpeg" class="w-10 object-cover rounded-full">
+                    </button>
+                    <div class="flex flex-col">
+                        <div class="flex mt-2">
+                            <p class="text-white text-sm font-medium">Jordan Williams</p>
+                            <p class="text-neutral-400 text-sm font-base px-2">1 year ago</p>
+                        </div>
+                        <p class="text-white text-sm font-base pt-1">That downshift at the end while spelling out LFA was just pure art</p>
+                    </div>
+                </div>
+                <div class="flex mx-10">
+                    <button class="ml-2 px-2">
+                        <img src="assets/like-2.svg" class="pr-1">
+                    </button>
+                    <p class="text-neutral-400 text-xs font-medium pt-1">3.3K</p>
+                    <button class="ml-2 pl-4">
+                        <img src="assets/dislike.svg" class="pr-1">
+                    </button>
+                    <p class="text-white text-xs font-medium pt-1 pl-4">Reply</p>
+                </div>
+                <div class="flex mx-10 my-3">
+                    <button class="ml-2 px-2">
+                        <img src="assets/down-blue.svg" class="pr-1">
+                    </button>
+                    <p class="text-blue-400 text-xs font-bold pt-1 pl-1">14 replies</p>
+                </div>
+            </div>
+            
+            <div class="my-2">
+                <div class="flex items-start">
+                    <button class="mt-3 mb-2 mr-4 rounded-full">
+                        <img src="assets/comment-2.jpeg" class="min-w-10 object-cover rounded-full">
+                    </button>
+                    <div class="flex flex-col">
+                        <div class="flex mt-2">
+                            <p class="text-white text-sm font-medium">Shubham Kaushik</p>
+                            <p class="text-neutral-400 text-sm font-base px-2">2 months ago</p>
+                        </div>
+                        <p class="text-white text-sm font-base pt-1">keeping how great a car the LFA is.. they way you've presented it.. the cinematography..the audio.. the editing.. it's soo engaging.. I felt like i'm in the car.. I had goosebumps.. and I know it will be 100x better in real life but the work you guys have put into this video is commendable.. great work guys..</p>
+                    </div>
+                </div>
+                <div class="flex mx-10">
+                    <button class="ml-2 px-2">
+                        <img src="assets/like-2.svg" class="pr-1">
+                    </button>
+                    <p class="text-neutral-400 text-xs font-medium pt-1">172</p>
+                    <button class="ml-2 pl-4">
+                        <img src="assets/dislike.svg" class="pr-1">
+                    </button>
+                    <p class="text-white text-xs font-medium pt-1 pl-4">Reply</p>
+                </div>
+            </div>
+
+            <div class="my-2">
+                <div class="flex items-start">
+                    <button class="mt-3 mb-2 mr-4 rounded-full">
+                        <img src="assets/comment-3.jpeg" class="min-w-10 object-cover rounded-full">
+                    </button>
+                    <div class="flex flex-col">
+                        <div class="flex mt-2">
+                            <p class="text-white text-sm font-medium">Nikita Osadchuk</p>
+                            <p class="text-neutral-400 text-sm font-base px-2">1 month ago</p>
+                        </div>
+                        <p class="text-white text-sm font-base pt-1">Applause to director and camera guys. Such an amazing production from music to script. This is my favorite car review film and regardless of me being blown away by the vehicle which I was already aware of, I'm also gteatful for the work your team has done for this film. I could feel the passion of everyone involved during the entire 20 minutes.</p>
+                    </div>
+                </div>
+                <div class="flex mx-10">
+                    <button class="ml-2 px-2">
+                        <img src="assets/like-2.svg" class="pr-1">
+                    </button>
+                    <p class="text-neutral-400 text-xs font-medium pt-1">79</p>
+                    <button class="ml-2 pl-4">
+                        <img src="assets/dislike.svg" class="pr-1">
+                    </button>
+                    <p class="text-white text-xs font-medium pt-1 pl-4">Reply</p>
+                </div>
+                <div class="flex mx-10 my-3">
+                    <button class="ml-2 px-2">
+                        <img src="assets/down-blue.svg" class="pr-1">
+                    </button>
+                    <p class="text-blue-400 text-xs font-bold pt-1 pl-1">1 reply</p>
+                </div>
+            </div>
+            
+            <div class="my-2">
+                <div class="flex items-start">
+                    <button class="mt-3 mb-2 mr-4 rounded-full">
+                        <img src="assets/comment-4.jpeg" class="w-10 object-cover rounded-full">
+                    </button>
+                    <div class="flex flex-col">
+                        <div class="flex mt-2">
+                            <p class="text-white text-sm font-medium">Steven Fries</p>
+                            <p class="text-neutral-400 text-sm font-base px-2">1 month ago</p>
+                        </div>
+                        <p class="text-white text-sm font-base pt-1">I can't stop coming back for more. Just a work of art. The car and the content. Great job guys.</p>
+                    </div>
+                </div>
+                <div class="flex mx-10">
+                    <button class="ml-2 px-2">
+                        <img src="assets/like-2.svg" class="pr-1">
+                    </button>
+                    <p class="text-neutral-400 text-xs font-medium pt-1">45</p>
+                    <button class="ml-2 pl-4">
+                        <img src="assets/dislike.svg" class="pr-1">
+                    </button>
+                    <p class="text-white text-xs font-medium pt-1 pl-4">Reply</p>
+                </div>
+            </div>
+           
+
+        </section>
+
+        <!--Beginning of Right Column-->
+        
+        <section class="col-start-3 col-end-4 pt-7">
+            <div class="flex text-white">
+                <button class="mr-2 py-1 px-4 rounded-lg bg-neutral-800 hover:bg-neutral-700 focus:bg-white focus:text-black">All
+                </button>
+                <button class="mr-2 py-1 px-4 rounded-lg bg-neutral-800 hover:bg-neutral-700 focus:bg-white focus:text-black">Lexus LFA
+                </button>
+                <button class="mr-2 py-1 px-4 rounded-lg bg-neutral-800 hover:bg-neutral-700 focus:bg-white focus:text-black">Test drives
+                </button>
+                <button class="mr-2 py-1 px-4 rounded-lg bg-neutral-800 hover:bg-neutral-700 focus:bg-white focus:text-black">Related
+                </button>
+            </div>
+
+            <!--Recommended Videos-->
+
+            <div class="flex flex-col mt-3">
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-1.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">48:09</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">Lexus LFA | A Proper Goodbye</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">savagegeese</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">2.1M views . 2 years ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-2.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">Shorts</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">When you press the emotion button</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">Throttle House</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">136K views views . 1 month ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-3.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">Autoplay</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">Mix - Throttle House</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">More from this channel for you</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-4.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">11:14</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">10+ Norwegian Cruise Embarkation</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">Life Well Cruised</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">59K views . 4 months ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-5.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">21:12</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">Ford GT Review // The Car That Tried...</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">Throttle House</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">1.2M views . 1 year ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+               
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-6.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">Shorts</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">Lexus LFA V10 amazing engine sou...</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">Mat Watson Cars</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">2.6M views . 1 year ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-7.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">30:27</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">2022 Acura NSX type S vs 1999 Acu...</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">Throttle House</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">1.6M views . 9 months ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+                <button id="video" class="flex text-white mt-1 mb-1 hover-trigger">
+                    <div class="mr-2 flex">
+                        <div class="w-60 h-36 bg-red-400 bg-cover bg-center flex relative rounded-xl" style="background-image: url(assets/thumbnail-8.jpeg);">
+                            <img src="assets/time.svg" class="absolute right-1 hover-target h-8">
+                            <img src="assets/playlist.svg" class="absolute top-6 right-0 hover-target h-10">
+                            <p class="text-xs px-1 rounded-lg bg-neutral-900 absolute bottom-2 right-1">22:32</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <p class="font-medium text-sm pb-1">Lexus LFA - Jay Leno's Garage</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">Jay Leno's Garage</p>
+                        <p class="font-medium text-xs pb-1 text-neutral-400">3.5M views . 10 years ago</p>
+                    </div>
+                    <div class="absolute right-0 hover-target">
+                        <img src="assets/3-dot-1.svg" class="h-8">
+                    </div>
+                </button>
+
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
